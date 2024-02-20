@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { IconType } from 'react-icons';
 
 import { cn } from '@/lib/utils';
 
@@ -20,8 +19,8 @@ type ButtonLinkProps = {
   isDarkBg?: boolean;
   variant?: (typeof ButtonLinkVariant)[number];
   size?: (typeof ButtonLinkSize)[number];
-  leftIcon?: IconType;
-  rightIcon?: IconType;
+  leftIcon?: any;
+  rightIcon?: any;
   classNames?: {
     leftIcon?: string;
     rightIcon?: string;
