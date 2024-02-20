@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { IconType } from 'react-icons';
-import { ImSpinner2 } from 'react-icons/im';
 
 import { cn } from '@/lib/utils';
 
@@ -12,8 +10,8 @@ type ButtonProps = {
   isDarkBg?: boolean;
   variant?: (typeof ButtonVariant)[number];
   size?: (typeof ButtonSize)[number];
-  leftIcon?: IconType;
-  rightIcon?: IconType;
+  leftIcon?: any;
+  rightIcon?: any;
   classNames?: {
     leftIcon?: string;
     rightIcon?: string;
@@ -108,9 +106,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 'text-primary-500': ['outline', 'ghost'].includes(variant),
               }
             )}
-          >
-            <ImSpinner2 className='animate-spin' />
-          </div>
+          ></div>
         )}
         {LeftIcon && (
           <div

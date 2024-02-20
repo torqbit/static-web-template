@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { IconType } from 'react-icons';
 
 import { cn } from '@/lib/utils';
 
@@ -18,7 +17,7 @@ const IconLinkVariant = [
 type IconLinkProps = {
   isDarkBg?: boolean;
   variant?: (typeof IconLinkVariant)[number];
-  icon?: IconType;
+  icon?: any;
   classNames?: {
     icon?: string;
   };
