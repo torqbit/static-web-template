@@ -8,6 +8,9 @@ import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faTrash } from '@fortawesome/free-solid-svg-icons';
+
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -47,6 +50,11 @@ export default function HomePage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img width='92' height='32' src='' alt='Deploy with Vercel' />
           </UnstyledLink>
+
+          <FontAwesomeIcon
+            icon={faCheck}
+            className='fas fa-check text-green-700'
+          />
 
           <footer className='absolute bottom-2 text-gray-700'>
             © {new Date().getFullYear()} By{' '}
